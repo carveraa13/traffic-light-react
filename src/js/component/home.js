@@ -1,9 +1,5 @@
 import React, { useState } from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-// import { useState } from "react";
-
 //create your first component
 export function Home() {
 	const [colorSelect, colfun] = useState("");
@@ -12,7 +8,8 @@ export function Home() {
 	const greenSelected = colorSelect == "green" ? "selected" : "";
 
 	return (
-		<div className="text-center m-5">
+		<div>
+			<div id="trafficTop"></div>
 			<div id="trafficBody">
 				<div
 					className={"light red " + redSelected}
